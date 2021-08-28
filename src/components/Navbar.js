@@ -4,6 +4,7 @@ import './Navbar.scss';
 function Navbar(){
   return (
     <nav>
+      {/* navbar */}
       <div className='container'>
         <div className='logo'>
           <h1>♦️ WEBSITE NAME</h1>
