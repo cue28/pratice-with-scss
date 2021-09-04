@@ -1,0 +1,80 @@
+@import './mixin';
+
+$navy: #23286b;
+$blue: #428cfb;
+$orenge: #f1b503;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.introduction {
+  width: auto;
+  height: auto;
+  background-color: #{$navy};
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  justify-items: center;
+  padding: 120px 0;
+}
+
+.introduction__card {
+  h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  p{
+    color: white;
+    font-family: DSsans;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  button{
+    margin-top: 30px;
+    padding: 20px 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #{$navy};
+    background-color: #{$orenge};
+  }
+}
+
+@include desktop {
+  .introduction__moblie {
+    display: none;
+  }
+}
+
+@include tablet {
+  .introduction__moblie {
+    display: none;
+  }
+}
+
+@include bmobile {
+  .introduction__web{
+    display: none;
+  }
+  .introduction{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+  }
+}
+
+@include smobile {
+  .introduction__web{
+    display: none;
+  }
+  .introduction{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+  }
+}
