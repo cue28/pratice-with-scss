@@ -1,0 +1,92 @@
+@import './mixin';
+
+$navy: #23286b;
+$blue: #428cfb;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color:navy;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: center;
+}
+
+@include desktop {
+  .navbar{
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    width: 1144px;
+    padding: 16px 0px;
+  }
+
+
+  .navbar__logo{
+    h1{
+      color:navy;
+      font-family: DSsans;
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+  }
+
+  .navbar__buttons {
+    display: flex;
+    list-style: none;
+      li{
+        padding: 20px;
+        color: navy;
+        font-weight: 400;
+      }
+  }
+}
+
+@include tablet {
+  .navbar{
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    width: 1144px;
+    padding: 16px 0px;
+  }
+  .navbar__logo{
+    h1{
+      color:navy;
+      font-family: DSsans;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 20px;
+    }
+  }
+  .navbar__buttons {
+    display: none;
+  }
+}
+
+@include bmobile {
+  .navbar{
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    width: 1144px;
+    padding: 16px 0px;
+  }
+  .navbar__logo{
+    h1{
+      color:navy;
+      font-family: DSsans;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 20px;
+    }
+  }
+  .navbar__buttons {
+    display: none;
+  }
+}
