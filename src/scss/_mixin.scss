@@ -1,7 +1,7 @@
 @import './variables';
 
 @mixin smobile {
-  @media (min-width: #{$breakpoint-smobile}) and (max-width: #{$bmobile-tablet - 1px}) {
+  @media (min-width: #{$breakpoint-smobile}) and (max-width: #{$breakpoint-bmobile - 1px}) {
     @content;
   }
 }
