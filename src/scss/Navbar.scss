@@ -9,7 +9,7 @@ $blue: #428cfb;
 
 a {
   text-decoration: none;
-  color:navy;
+  color:#{$navy};
 }
 
 .nav__container {
@@ -17,31 +17,32 @@ a {
   justify-content: center;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between!important;
+  align-items: center;
+  width: 1144px;
+  padding: 16px 0px;
+}
+
+
+.navbar__logo{
+  h1{
+    color:#{$navy};
+    font-family: DSsans;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 20px;
+  }
+}
+
 @include desktop {
-  .navbar{
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center;
-    width: 1144px;
-    padding: 16px 0px;
-  }
-
-
-  .navbar__logo{
-    h1{
-      color:navy;
-      font-family: DSsans;
-      font-weight: 700;
-      font-size: 1.2em;
-    }
-  }
-
   .navbar__buttons {
     display: flex;
     list-style: none;
       li{
         padding: 20px;
-        color: navy;
+        color: #{$navy};
         font-weight: 400;
       }
   }
@@ -51,22 +52,6 @@ a {
 }
 
 @include tablet {
-  .navbar{
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center;
-    width: 1144px;
-    padding: 16px 0px;
-  }
-  .navbar__logo{
-    h1{
-      color:navy;
-      font-family: DSsans;
-      font-weight: 700;
-      font-size: 1.2em;
-      padding: 20px;
-    }
-  }
   .navbar__buttons {
     display: none;
   }
@@ -76,27 +61,11 @@ a {
 }
 
 @include bmobile {
-  .navbar{
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center;
-    width: 1144px;
-    padding: 16px 0px;
-  }
-  .navbar__logo{
-    h1{
-      color:navy;
-      font-family: DSsans;
-      font-weight: 700;
-      font-size: 1.2em;
-      padding: 20px;
-    }
-  }
   .navbar__buttons {
     display: none;
   }
   .hambuger {
-    color:navy;
+    color:#{$navy};
     font-size: 18px;
     font-weight: 400;
     padding: 18px;
@@ -104,27 +73,11 @@ a {
 }
 
 @include smobile {
-  .navbar{
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center;
-    width: 1144px;
-    padding: 16px 0px;
-  }
-  .navbar__logo{
-    h1{
-      color:navy;
-      font-family: DSsans;
-      font-weight: 700;
-      font-size: 1.2em;
-      padding: 20px;
-    }
-  }
   .navbar__buttons {
     display: none;
   }
   .hambuger {
-    color:navy;
+    color:#{$navy};
     font-size: 18px;
     font-weight: 400;
     padding: 18px;
