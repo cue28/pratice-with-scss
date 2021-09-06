@@ -3,6 +3,7 @@ import './App.scss';
 import Navbar from './components/Navbar';
 import Mainbanner from './components/Mainbanner';
 import Introduction from './components/Introduction';
+import Detail from './components/Detail';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Mainbanner/>
       <Introduction/>
+      <Detail />
     </div>
   );
 }

@@ -14,10 +14,16 @@ $orenge: #f1b503;
   height: auto;
   background-color: #{$navy};
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: stretch;
   justify-items: center;
   padding: 120px 0;
+}
+
+.introduction__grid {
+  display: grid;
+  align-items: stretch;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 180px;
 }
 
 .introduction__card {
@@ -55,13 +61,16 @@ $orenge: #f1b503;
   .introduction__moblie {
     display: none;
   }
+  .introduction__grid {
+    column-gap: 20px;
+  }
 }
 
 @include bmobile {
   .introduction__web{
     display: none;
   }
-  .introduction{
+  .introduction__grid{
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 70px;
@@ -72,7 +81,7 @@ $orenge: #f1b503;
   .introduction__web{
     display: none;
   }
-  .introduction{
+  .introduction__grid{
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 70px;
