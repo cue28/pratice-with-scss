@@ -9,3 +9,44 @@ $orenge: #f1b503;
   height: auto;
   padding: 120px 0;
 }
+
+.detail-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 100;
+  column-gap: 70px;
+   img {
+    margin: 0;
+    padding: 0;
+   }
+}
+
+.detail-featured-text {
+  h2 {
+    font-size: 40px;
+    font-family:'Times New Roman';
+    font-weight: 700;
+    color: #{$navy};
+    margin-bottom: 32px;
+  }
+  p {
+    font-family: DSsans;
+    font-weight: 400;
+    color: #{$navy};
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  a {
+    font-weight: 700;
+    font-family: DSsans;
+    font-size: 14px;
+    color:#428cfb;
+  }
+}
